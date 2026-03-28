@@ -34,6 +34,12 @@ _No skills yet._
 
 _No skills yet._
 
+### Strategy
+
+| Skill | Description | Tags |
+|-------|-------------|------|
+| [landing-interview](strategy/landing-interview/) | Structured discovery interview for landing page projects. Guides conversation with the developer before starting a new landing or auditing an existing one. Produces a PRD. | landing, interview, discovery, prd, audit, web, conversion |
+
 ## Tech Stack Context
 
 These skills are designed around ATHENDAT's core stack:
