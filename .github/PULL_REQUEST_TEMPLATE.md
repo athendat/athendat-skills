@@ -1,27 +1,25 @@
 ## Skill Change
 
-**Skill:** `skills/<name>/`
+**Skill:** `<category>/<skill-name>/`
 **Type:** New Skill / Update / Fix
 
 ### What does this skill do?
 <!-- Brief description -->
 
-### When should it trigger?
-<!-- List 3-5 example prompts that should activate this skill -->
+### When should it be used?
+<!-- List 3-5 scenarios where this skill applies -->
 
 1.
 2.
 3.
 
-### Example output
-<!-- Paste or describe what Claude produces with this skill active -->
+### Checklist
 
-### Testing
-- [ ] Tested with 3+ realistic prompts
-- [ ] Verified triggering from natural language
-- [ ] Packaged `.skill` file updated in `dist/`
+- [ ] `skill.md` has valid YAML frontmatter (`name`, `description`, `category`, `tags`)
+- [ ] Content is agent-agnostic (no tool-specific references)
 - [ ] All content in English
-- [ ] SKILL.md under 500 lines
+- [ ] `skill.md` under 500 lines
+- [ ] `README.md` table updated
 
 ### Notes
 <!-- Any context, tradeoffs, or known limitations -->
