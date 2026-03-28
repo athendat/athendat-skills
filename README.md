@@ -64,4 +64,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on creating and submitting
 
 ## License
 
-Internal use — ATHENDAT S.R.L. All rights reserved.
+[MIT](LICENSE)
