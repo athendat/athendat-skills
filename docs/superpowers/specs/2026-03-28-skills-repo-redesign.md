@@ -79,8 +79,8 @@ Serves as the central index:
 - Usage section with brief, concrete instructions per agent:
   - Claude Code: add as skill or reference
   - Cursor/Windsurf: add to rules
-  - GitHub Copilot: reference in .github/copilot-instructions.md
-  - Gemini CLI: reference in GEMINI.md
+  - GitHub Copilot: optionally reference this library from your repo's `.github/copilot-instructions.md` (if you use one)
+  - Gemini CLI: optionally document usage in a `GEMINI.md` (or equivalent) file in your own repo
   - Any agent: paste or reference the content
 - Link to CONTRIBUTING.md
 
