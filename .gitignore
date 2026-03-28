@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if any scripts use it)
+node_modules/
+package-lock.json
+
+# Python (if any scripts use it)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Temp/workspace files from skill testing
+*-workspace/
+iteration-*/
+eval-*/
+feedback.json
+
+# Don't ignore dist/ — we want packaged .skill files tracked
+# !dist/
