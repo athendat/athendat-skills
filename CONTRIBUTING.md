@@ -27,6 +27,7 @@
 | `devops/` | CI/CD, infrastructure, containers |
 | `testing/` | QA, test strategies |
 | `documentation/` | Technical writing, specs |
+| `strategy/` | Discovery, interviews, PRDs, project planning |
 
 New categories can be added as top-level directories when needed.
 
