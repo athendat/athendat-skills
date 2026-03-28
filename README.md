@@ -1,22 +1,38 @@
-# 🧠 ATHENDAT Claude Skills
+# ATHENDAT Skills
 
-A centralized repository of reusable [Claude Skills](https://docs.anthropic.com) for ATHENDAT's product ecosystem. Skills are structured knowledge modules that enhance Claude's capabilities for specific tasks — from UI/UX design to document generation, code review, and beyond.
+Reusable skill modules for AI coding agents. Agent-agnostic, organized by discipline.
 
-## What Are Skills?
+## Skills
 
-Skills are `.skill` packages containing:
-- A `SKILL.md` with instructions, patterns, and decision logic
-- Optional `references/` for deep-dive documentation
-- Optional `scripts/` for deterministic automation
-- Optional `assets/` for templates, fonts, or other static files
+### Design
 
-When installed in Claude, skills trigger automatically based on context — giving Claude domain-specific expertise tailored to ATHENDAT's stack and workflows.
+| Skill | Description | Tags |
+|-------|-------------|------|
+| [ux-ui](design/ux-ui/) | UX/UI design system combining technical precision (4pt grid, typography, color semantics) with cognitive psychology (fluency, halo effect, peak-end rule) for premium interfaces. | angular, flutter, ui, ux, accessibility, design-system |
 
-## Available Skills
+### Backend
 
-| Skill | Description | Status |
-|---|---|---|
-| [`ath-ux-ui-design`](skills/ath-ux-ui-design/) | UX/UI design system combining technical precision (4pt grid, typography, color semantics) with cognitive psychology (fluency, halo effect, peak-end rule) for premium interfaces. | ✅ Ready |
+_No skills yet._
+
+### Frontend
+
+_No skills yet._
+
+### Mobile
+
+_No skills yet._
+
+### DevOps
+
+_No skills yet._
+
+### Testing
+
+_No skills yet._
+
+### Documentation
+
+_No skills yet._
 
 ## Tech Stack Context
 
@@ -30,49 +46,21 @@ These skills are designed around ATHENDAT's core stack:
 - **Hardware:** SUNMI POS devices
 - **Maps:** Mapbox
 
-## Installation
+## Usage
 
-### In Claude.ai (UI)
-1. Go to **Settings → Profile → Skills**
-2. Upload the `.skill` file from the `dist/` folder
+These skills are plain Markdown files. Point your AI coding agent to the relevant `skill.md` file:
 
-### Manual Build
-```bash
-# Package a skill from source
-cd skills/<skill-name>
-# Use the skill-creator packaging script or zip manually:
-zip -r ../../dist/<skill-name>.skill .
-```
+- **Claude Code:** Add as a skill or include the path in your project context
+- **Cursor / Windsurf:** Add the `skill.md` path to your rules or context files
+- **GitHub Copilot:** Reference in `.github/copilot-instructions.md` or include in chat context
+- **Gemini CLI:** Reference in `GEMINI.md` or add to context files
+- **Any other agent:** Paste or reference the `skill.md` content directly
 
-## Repository Structure
-
-```
-claude-skills/
-├── README.md
-├── CONTRIBUTING.md
-├── .gitignore
-├── dist/                    # Packaged .skill files (ready to install)
-├── skills/                  # Skill source files
-│   └── <skill-name>/
-│       ├── SKILL.md         # Main instructions (required)
-│       ├── references/      # Deep-dive docs (loaded on demand)
-│       ├── scripts/         # Automation scripts
-│       └── assets/          # Templates, fonts, static files
-└── .github/
-    └── PULL_REQUEST_TEMPLATE.md
-```
+Each skill's `skill.md` is self-contained. If it has a `references/` directory, the main file will indicate when to consult those deeper documents.
 
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on creating and submitting new skills.
-
-**Quick start:**
-1. Create a new folder under `skills/`
-2. Write a `SKILL.md` with YAML frontmatter (`name`, `description`)
-3. Add reference files if the skill needs deep-dive documentation
-4. Test with real prompts in Claude
-5. Package and add to `dist/`
-6. Open a PR
 
 ## License
 
