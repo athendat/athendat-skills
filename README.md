@@ -52,8 +52,8 @@ These skills are plain Markdown files. Point your AI coding agent to the relevan
 
 - **Claude Code:** Add as a skill or include the path in your project context
 - **Cursor / Windsurf:** Add the `skill.md` path to your rules or context files
-- **GitHub Copilot:** Reference in `.github/copilot-instructions.md` or include in chat context
-- **Gemini CLI:** Reference in `GEMINI.md` or add to context files
+- **GitHub Copilot:** Optionally reference it from a Copilot configuration file (for example `.github/copilot-instructions.md` that you create) or include it directly in chat context
+- **Gemini CLI:** Optionally reference it from a Gemini configuration file (for example a `GEMINI.md` file you create) or add it to your context files
 - **Any other agent:** Paste or reference the `skill.md` content directly
 
 Each skill's `skill.md` is self-contained. If it has a `references/` directory, the main file will indicate when to consult those deeper documents.
