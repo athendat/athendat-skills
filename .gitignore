@@ -18,11 +18,8 @@ __pycache__/
 .venv/
 venv/
 
-# Temp/workspace files from skill testing
+# Temp/workspace files
 *-workspace/
 iteration-*/
 eval-*/
 feedback.json
-
-# Don't ignore dist/ — we want packaged .skill files tracked
-# !dist/
