@@ -320,7 +320,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on creating and submitting
 
 ## License
 
-Internal use — ATHENDAT S.R.L. All rights reserved.
+This project is licensed under the MIT License – see [LICENSE](LICENSE) for details.
 ```
 
 - [ ] **Step 2: Commit**
